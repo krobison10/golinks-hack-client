@@ -4,7 +4,7 @@ document.getElementById('githubStatsForm').addEventListener('submit', function(e
     const username = document.getElementById('username').value;
     const nonForkedOnly = document.getElementById('nonForked').checked;
   
-    let url = `http://localhost:3000/stats?username=${encodeURIComponent(username)}`;
+    let url = `https://golinks-github-stats.herokuapp.com/stats?username=${encodeURIComponent(username)}`;
     if (nonForkedOnly) {
       url += '&forked=false';
     }
