@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GoLinks GitHub Stats Hack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+    <body>
+        <div class="container">
+            <h1 class="mt-4">GoLinks GitHub Stats Hack</h1>
+            <form id="githubStatsForm" class="mt-4">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="nonForked" name="nonForked">
+                    <label class="form-check-label" for="nonForked">Non-Forked Only</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-4">Get Stats</button>
+            </form>
+            <br><br>
+            <h1>Stats:</h1>
+            <div id="result" class="mt-4">
+                
+            </div>
+        </div>
+    </body>
+</html>
